@@ -2,8 +2,8 @@ process FUSIONREPORT {
     tag "$meta.id"
     label 'process_medium'
 
-    container "docker.io/clinicalgenomics/fusion-report:2.1.8"
     conda "bioconda::fusion-report=3.1.1"
+    container "docker.io/clinicalgenomics/fusion-report:3.1.1"
 
 
     input:
